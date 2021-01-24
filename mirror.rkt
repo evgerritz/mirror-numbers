@@ -20,17 +20,17 @@
           (else (cons (string->number (first args))
                       (list (string->number (first (rest args)))))))))
 
-(define (listMirrors n)
-    (mirror n)
-    (if (equal? n 1000)
-        0
-        (listMirrors (+ n 1))))
+(define (list-mirrors start end)
+    (let ((n start))
+        (if (equal? n end )
+            '() 
+            (cons (mirror n) (list-mirrors (+ n 1) end)))))
 
-(define (plotMirrors lower upper)
+(define (plot-mirrors lower upper)
     (plot
       (points (for/list ([i (in-range lower upper)])
                   (list i (mirror i))))))
 
 (let ((args (parseargs (current-command-line-arguments))))
-    (plotMirrors (first args) (second args)))
+    (plot-mirrors (first args) (second args)))
 
