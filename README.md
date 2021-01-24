@@ -21,3 +21,5 @@ Examples:
 `./mirror.rkt 100`
 
 <img src="imgs/ex2.jpg" width="250" height="250"/>
+
+`mirror.rkt` also contains a function `(list-mirrors start end)`
