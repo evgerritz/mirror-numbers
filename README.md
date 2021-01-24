@@ -22,4 +22,4 @@ Examples:
 
 <img src="imgs/ex2.jpg" width="250" height="250"/>
 
-`mirror.rkt` also contains a function `(list-mirrors start end)`
+`mirror.rkt` also contains a function `(list-mirrors start end)` that can be used to create the list of mirror numbers ranging from `start` to `end`.
