@@ -7,7 +7,7 @@ Mathematically this can expressed as the following summation:
 
 <img src="imgs/latex.jpg" width="300" height="80"/>
 
-I made this visualizer in racket (using the built-in plot-gui-lib) while pondering what sorts of behavior mirror numbers would exhibit viewed as a sequence.
+I made this visualizer in racket (using the built-in plot-gui-lib) while wondering what sorts of behavior mirror numbers would exhibit viewed as a sequence.
 
 ## Usage:
 `./mirror.rkt [[start] end]`
